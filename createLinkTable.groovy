@@ -1,3 +1,4 @@
+// just a simple script to create the table with all links
 def formats=['AsciiDoc', 'DocBook', 'docx', 'epub', 'HTML', 'MarkDown', 'Textile']
 def languages=['DE','EN']
 def types=['plain','withhelp']

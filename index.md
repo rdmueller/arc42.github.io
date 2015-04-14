@@ -60,98 +60,13 @@ Currently there are two sources for downloads...
 
 Here are all templates derived from the AsciiDoc templates in a single overview:
 
-<table>
-	<tr>
-		<th>Format</th>
-		<th>Language</th>
-		<th>With Help</th>
-		<th>Plain</th>
-	</tr>
-  <tr>
-        <td>AsciiDoc</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-asciidoc.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-asciidoc.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-asciidoc.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-asciidoc.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>DocBook</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-docbook.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-docbook.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-docbook.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-docbook.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>docx</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-docx.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-docx.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-docx.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-docx.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>epub</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-epub.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-epub.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-epub.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-epub.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>HTML</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-html.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-html.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-html.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-html.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>MarkDown</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-markdown.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-markdown.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-markdown.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-markdown.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td>Textile</td>
-        <td>DE</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-plain-textile.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-withhelp-textile.zip?raw=true'>.zip</a></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>EN</td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-plain-textile.zip?raw=true'>.zip</a></td>
-        <td><a href='https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-withhelp-textile.zip?raw=true'>.zip</a></td>
-    </tr>
-</table>
+{% assign formats = "asciidoc|docbook|docx|epub|html|markdown|textile" | split: "|"  %}  
+{% assign languages = "DE|EN" | split: "|"  %}  
+{% assign types = "plain|withhelp" | split: "|"  %}  
+| Format | Language | Plain | With Help |
+|--------|----------|-------|-----------|
+{% for format in formats %}{% for language in languages %}| {{ format }} | {{ language }} | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-{{language}}-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
+{% endfor %}{% endfor %}
 
 ----
 

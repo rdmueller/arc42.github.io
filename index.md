@@ -53,7 +53,7 @@ Currently there are two sources for downloads...
 **GitHub** - on GitHub you'll find the new AsciiDoc version of the template together with a project which converts the AsciiDoc template into several other formats. These templates are currently available in English and German:
 
 <p>
-  <section id="downloads" class="clearfix">
+  <section id="downloads-section" class="clearfix">
     <a href="https://github.com/arc42/arc42-template" id="view-on-github" class="button"><span>Templates</span></a>
   </section>
 </p>	

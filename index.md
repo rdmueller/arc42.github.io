@@ -61,12 +61,11 @@ Currently there are two sources for downloads...
 Here are all templates derived from the AsciiDoc templates in a single overview:
 
 {% assign formats = "asciidoc|docbook|docx|epub|html|markdown|textile" | split: "|"  %}  
-{% assign languages = "DE|EN" | split: "|"  %}  
 {% assign types = "plain|withhelp" | split: "|"  %}  
 | Format | Language | Plain | With Help |
 |--------|----------|-------|-----------|
-{% for format in formats %}{% for language in languages %}| {{ format }} | {{ language }} | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-{{language}}-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
-{% endfor %}{% endfor %}
+{% for format in formats %}| {{ format }} | EN | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
+|  | DE | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-{{type}}-{{format}}.zip?raw=true) |{% endfor %}{% endfor %}
 
 ----
 

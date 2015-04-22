@@ -68,6 +68,7 @@ Here are all templates derived from the AsciiDoc templates in a single overview:
 |  | DE | {% for type in types %} [.zip](download/arc42-template-DE-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
 {% endfor %}
 
+You can also view the HTML version with help online: [EN](template/en/arc42-template.html) / [DE](template/de/arc42-template.html)
 ----
 
 # other related sites and literature

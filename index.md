@@ -64,8 +64,8 @@ Here are all templates derived from the AsciiDoc templates in a single overview:
 {% assign types = "plain|withhelp" | split: "|"  %}  
 | Format | Language | Plain | With Help |
 |--------|----------|-------|-----------|
-{% for format in formats %}| {{ format }} | EN | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-EN-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
-|  | DE | {% for type in types %} [.zip](https://github.com/arc42/arc42-template/blob/gh-pages/dist/arc42-template-DE-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
+{% for format in formats %}| {{ format }} | EN | {% for type in types %} [.zip](download/arc42-template-EN-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
+|  | DE | {% for type in types %} [.zip](download/arc42-template-DE-{{type}}-{{format}}.zip?raw=true) |{% endfor %}
 {% endfor %}
 
 ----

@@ -54,7 +54,7 @@ Currently there are two sources for downloads...
 
 <p>
   <section id="downloads-section" class="clearfix">
-    <a href="https://github.com/arc42/arc42-template" id="view-on-github" class="button"><span>Templates</span></a>
+    <a href="https://github.com/arc42/arc42.github.io/tree/master/download" id="view-on-github" class="button"><span>Templates</span></a>
   </section>
 </p>	
 

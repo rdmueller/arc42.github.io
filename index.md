@@ -60,7 +60,7 @@ Currently there are two sources for downloads...
 
 Here are all templates derived from the AsciiDoc templates in a single overview:
 
-{% assign formats = "asciidoc|docbook|docx|epub|html|markdown|textile" | split: "|"  %}  
+{% assign formats = "asciidoc|docbook|docx|epub|html|markdown|markdownMP|textile" | split: "|"  %}  
 {% assign types = "plain|withhelp" | split: "|"  %}  
 | Format | Language | Plain | With Help |
 |--------|----------|-------|-----------|

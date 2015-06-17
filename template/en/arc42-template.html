@@ -482,6 +482,15 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>
 </div>
 </div>
 <div class="sect1">
@@ -947,6 +956,7 @@ Make sure that the interfaces are specified with all their relevant aspects (wha
 <p>The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.</p>
 </div>
 <div class="ulist">
+<div class="title">Form</div>
 <ul>
 <li>
 <p>Various context diagram (see below)</p>
@@ -1009,28 +1019,54 @@ If there are many neighboring systems you can substitute the context diagram wit
 <p>For many building blocks you can describe its interfaces directly in the black box template of the building block. For complex interfaces – and external interfaces are normally very complex – it is worth while to describe them in separate sections. Use the following interface template to guide you towards many questions that might be relevant for the interface.</p>
 </div>
 <div class="paragraph">
-<p>==== Interface Template</p>
+<div class="title">Interface Template</div>
+<p>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <caption class="title">Table 3. Interface Template</caption>
 <colgroup>
-<col style="width:100%;"> 
+<col style="width:25%;">
+<col style="width:75%;"> 
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">Interface ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes w.r.t. previous release</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Who changed it and why?</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact person(s) or organization</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
 </table>
 
 <div class="paragraph">
-<p>===== Business Context of the Interface</p>
+<div class="title">Business Context of the Interface</div>
+<p>.</p>
 </div>
 <div class="paragraph">
-<p>===== Business Processes</p>
-</div>
-<div class="paragraph">
+<div class="title">Business Processes</div>
 <p>&lt;Diagram or desciption of business processes relevant for this interface&gt;</p>
 </div>
 <div class="paragraph">
-<p>===== Interface Data</p>
-</div>
-<div class="paragraph">
+<div class="title">Interface Data</div>
 <p>&lt;Description of interface data&gt;</p>
 </div>
 <div class="ulist">
@@ -1043,30 +1079,24 @@ If there are many neighboring systems you can substitute the context diagram wit
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Requirements for the Interface</p>
-</div>
 <div class="ulist">
+<div class="title">Requirements for the Interface</div>
 <ul>
 <li>
 <p>&#8230;</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Security Aspects</p>
-</div>
 <div class="ulist">
+<div class="title">Security Aspects</div>
 <ul>
 <li>
 <p>&#8230;</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Quantities</p>
-</div>
 <div class="ulist">
+<div class="title">Quantities</div>
 <ul>
 <li>
 <p>Runtime</p>
@@ -1085,20 +1115,16 @@ If there are many neighboring systems you can substitute the context diagram wit
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Participating Resources</p>
-</div>
 <div class="ulist">
+<div class="title">Participating Resources</div>
 <ul>
 <li>
 <p>&#8230;</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Syntax: Data and Formats</p>
-</div>
 <div class="ulist">
+<div class="title">Syntax: Data and Formats</div>
 <ul>
 <li>
 <p>Data Formats</p>
@@ -1114,60 +1140,48 @@ If there are many neighboring systems you can substitute the context diagram wit
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Syntax: Methods/Functions</p>
-</div>
 <div class="ulist">
+<div class="title">Syntax: Methods/Functions</div>
 <ul>
 <li>
 <p>Check data</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=====  Interface Process</p>
-</div>
 <div class="ulist">
+<div class="title">Interface Process</div>
 <ul>
 <li>
 <p>Logical and technical processes</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Semantics</p>
-</div>
 <div class="ulist">
+<div class="title">Semantics</div>
 <ul>
 <li>
 <p>Side effects, consequences</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Technical Infrastructure</p>
-</div>
 <div class="ulist">
+<div class="title">Technical Infrastructure</div>
 <ul>
 <li>
 <p>Technical protocols</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Error and Exception Handling</p>
-</div>
 <div class="ulist">
+<div class="title">Error and Exception Handling</div>
 <ul>
 <li>
 <p>&#8230;</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Constraints and Assumptions</p>
-</div>
 <div class="ulist">
+<div class="title">Constraints and Assumptions</div>
 <ul>
 <li>
 <p>Access Rights</p>
@@ -1183,20 +1197,16 @@ If there are many neighboring systems you can substitute the context diagram wit
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Operating the Interface</p>
-</div>
 <div class="ulist">
+<div class="title">Operating the Interface</div>
 <ul>
 <li>
 <p>&#8230;</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Meta Information for the Interface</p>
-</div>
 <div class="ulist">
+<div class="title">Meta Information for the Interface</div>
 <ul>
 <li>
 <p>Person in charge</p>
@@ -1212,10 +1222,8 @@ If there are many neighboring systems you can substitute the context diagram wit
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>===== Examples of Using the Interface</p>
-</div>
 <div class="ulist">
+<div class="title">Examples of Using the Interface</div>
 <ul>
 <li>
 <p>Sample data</p>
@@ -1229,19 +1237,23 @@ If there are many neighboring systems you can substitute the context diagram wit
 </ul>
 </div>
 <div class="paragraph">
-<p>==== External Interface 2
-&lt;insert interface template&gt;</p>
+<div class="title">External Interface 2</div>
+<p>&lt;insert interface template&gt;</p>
 </div>
 <div class="paragraph">
-<p>==== External Interface 3
-&lt;insert interface template&gt;</p>
+<div class="title">External Interface 3</div>
+<p>&lt;insert interface template&gt;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>&#8230;</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>==== &#8230;</p>
-</div>
-<div class="paragraph">
-<p>==== External Interface n
-&lt;insert interface template&gt;</p>
+<div class="title">External Interface n</div>
+<p>&lt;insert interface template&gt;</p>
 </div>
 </div>
 </div>
@@ -2849,7 +2861,7 @@ bug finders and users of this method.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-04-22 20:24:27 CEST
+Last updated 2015-06-17 21:18:39 CEST
 </div>
 </div>
 </body>

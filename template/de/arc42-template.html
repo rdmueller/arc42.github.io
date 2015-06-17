@@ -481,6 +481,15 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>
 </div>
 </div>
 <div class="sect1">
@@ -1105,20 +1114,19 @@ Zusätzlich eine Mapping-Tabelle, welcher logische Input (aus 3.1) über welchen
 <div class="title">Inhalt</div>
 <p>Spezifikation der Kommunikationskanäle, die ihr System mit den Nachbar-Systemen und der Umwelt verbinden.</p>
 </div>
-<div class="paragraph">
-<p>=== <em>Externe Schnittstelle 1</em></p>
-</div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <caption class="title">Tabelle 4. Identifikation der Schnittstelle</caption>
 <colgroup>
 <col style="width:50%;">
 <col style="width:50%;"> 
 </colgroup>
-<tbody>
+<thead>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name / Bezeichnung der Schnittstelle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Name der Schnittstelle&gt;</em></p></td>
+<th class="tableblock halign-left valign-top">Name / Bezeichnung der Schnittstelle</th>
+<th class="tableblock halign-left valign-top"><em>&lt;Name der Schnittstelle&gt;</em></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1311,9 +1319,6 @@ Zusätzlich eine Mapping-Tabelle, welcher logische Input (aus 3.1) über welchen
 <p>Fassen Sie auf wenigen Seiten die Beweggründe für zentrale Entwurfsentscheidungen zusammen. Motivieren Sie ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben. Verweisen Sie – wo nötig – auf weitere Ausführungen in Folgekapiteln.</p>
 </div>
 <div class="paragraph">
-<p>=== Einstiegshilfe</p>
-</div>
-<div class="paragraph">
 <p>In diesem Kapitel beschreiben wir Stellen im Code anhand von Klassen oder Methode, an
 denen wichtige fachliche Funktionalität implementiert ist und/oder die im weiteren
 Lebenszyklus der Anwendung potenziell geändert werden.</p>
@@ -1486,25 +1491,25 @@ und deren Abhängigkeiten.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <colgroup>
-<col style="width:20%;">
-<col style="width:80%;"> 
+<col style="width:16%;">
+<col style="width:66%;">
+<col style="width:16%;"> 
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 1</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> Beschreibung 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 </tbody>
 </table>
@@ -1827,25 +1832,25 @@ und deren Abhängigkeiten.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <colgroup>
-<col style="width:20%;">
-<col style="width:80%;"> 
+<col style="width:16%;">
+<col style="width:66%;">
+<col style="width:16%;"> 
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 1</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> Beschreibung 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 </tbody>
 </table>
@@ -2036,25 +2041,25 @@ und deren Abhängigkeiten.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <colgroup>
-<col style="width:20%;">
-<col style="width:80%;"> 
+<col style="width:16%;">
+<col style="width:66%;">
+<col style="width:16%;"> 
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 1</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> Beschreibung 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 </tbody>
 </table>
@@ -2397,25 +2402,25 @@ und deren Abhängigkeiten.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width:100%; ">
 <colgroup>
-<col style="width:20%;">
-<col style="width:80%;"> 
+<col style="width:16%;">
+<col style="width:66%;">
+<col style="width:16%;"> 
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 1</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> Beschreibung 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Baustein 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verweis auf Blackbox-Beschreibung</p></td>
 </tr>
 </tbody>
 </table>
@@ -3840,7 +3845,7 @@ Zu viele Projekte sind daran gescheitert, dass sie ihre Nachbarn nicht kannten :
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-04-22 20:24:27 CEST
+Last updated 2015-06-16 21:21:25 CEST
 </div>
 </div>
 </body>
